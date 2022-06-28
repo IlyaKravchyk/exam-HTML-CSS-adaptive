@@ -1,0 +1,164 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+ul li,
+ol li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: #000;
+}
+
+html body {
+   font-family: Roboto;
+   font-size: 14px;
+   color: #000;
+}
+
+/*-----------------------------------------------*/
+.container {
+   max-width: 1160px;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.site {}
+
+.header {
+   background-color: #eeeeee;
+}
+
+.header__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 45px;
+}
+
+.header__menu {
+   display: flex;
+}
+
+.header__list:not(:last-child) {
+   margin-right: 50px;
+}
+
+.header__link {
+   font-size: 16px;
+   line-height: 30px;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-family: Roboto;
+}
+
+.header__basket::before {
+   font-family: fontawesome;
+   content: '\f07a';
+   font-size: 16px;
+   color: #a6a6a6;
+   margin-right: 25px;
+}
+
+.header__promo {
+   background: url('../img/slide1.png') no-repeat bottom 0 right 30px;
+   background-size: 60%;
+}
+
+.header__promo-content {
+   max-width: 330px;
+   padding: 85px 0 80px 0;
+   margin-right: auto;
+}
+
+.header__title {
+   font-size: 55px;
+   line-height: 55px;
+   font-weight: 500;
+}
+
+.header__subtitle {
+   font-size: 16px;
+   line-height: 24px;
+   color: #283136;
+   margin: 28px 0 42px 0;
+}
+
+.header__link-button {
+   background-color: #fb565a;
+   font-size: 16px;
+   font-weight: 500;
+   color: #ffffff;
+   padding: 20px 55px;
+   display: inline-block;
+}
+
+.cards {
+   padding: 80px 0;
+}
+
+
+.cards__container {
+   max-width: 1100px;
+   margin-right: auto;
+}
+
+.cards__content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.cards__item {
+   flex: 0 1 33.33%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin: 0 auto;
+}
+
+.cards__title {
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin: 25px 0;
+}
+
+.cards__description {
+   max-width: 245px;
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #283136;
+   margin-bottom: 35px;
+}
+
+.cards__button {
+   font-size: 16px;
+   line-height: 18px;
+   font-weight: 500;
+   color: #ffffff;
+   padding: 20px 40px;
+   display: inline-block;
+   border-radius: 3px;
+   text-transform: uppercase;
+}
+
+.red {
+   background-color: #fb565a;
+}
+
+.green {
+   background-color: #00ca74;
+}
+
+.yellow {
+   background-color: #efc84a;
+}
