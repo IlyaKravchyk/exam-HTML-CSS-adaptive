@@ -1,0 +1,142 @@
+@media(max-width:1034px) {
+   .header__burger {
+      display: flex;
+
+   }
+
+   .header__navigation {
+      width: auto;
+   }
+
+   .header__menu {
+      display: none;
+   }
+
+   #header__ckeckbox:checked~.header__menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      opacity: .9;
+      height: 100%;
+      z-index: 100;
+      padding: 40px 0 0 60px;
+      width: 300px;
+   }
+
+   .header__list {
+      margin-bottom: 30px;
+   }
+
+   .header__link {
+      color: #fff;
+      font-size: 22px;
+   }
+
+   .header__basket::before {
+      display: none;
+   }
+
+   .header__basket::after {
+      font-family: fontawesome;
+      content: '\f07a';
+      font-size: 16px;
+      color: #fff;
+      margin-left: 10px;
+   }
+}
+
+@media(max-width:1024px) {
+
+   .information__item:first-child {
+      max-width: 600px;
+      padding-right: 30px;
+   }
+
+   .information__title {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 25px;
+   }
+
+   .information__description {
+      margin-bottom: 35px;
+   }
+}
+
+@media(max-width:768px) {
+   .cards__item {
+      flex: 0 1 100%;
+      align-items: center;
+      text-align: center;
+   }
+
+   .cards__item:not(:last-child) {
+      margin-bottom: 50px;
+   }
+
+   .information__content {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   .information__item:first-child {
+      margin-bottom: 50px;
+   }
+
+   .logo__icon:not(:last-child)::after {
+      display: none;
+   }
+
+   .logo__icon {
+      flex: 0 1 50%;
+   }
+
+   .frame__items {
+      position: static;
+      transform: translateY(0);
+      margin: 0 auto;
+      background-color: #eee;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 1px 3px 10px #000;
+   }
+
+   .footer__content {
+      flex-wrap: wrap-reverse;
+   }
+
+   .footer__text {
+      margin-bottom: 30px;
+      flex: 0 1 auto;
+      text-align: center;
+   }
+
+   .footer__icon {
+      width: 50px;
+      height: 50px;
+   }
+
+   .footer {
+      padding: 50px 0;
+   }
+}
+
+@media(max-width:425px) {
+   .header__row {
+      padding-top: 20px;
+   }
+
+   #header__ckeckbox:checked~.header__menu {
+      width: 50%;
+   }
+
+   .logo__icon {
+      flex: 0 1 100%;
+   }
+
+   .logo__icon:not(:last-child) {
+      margin-bottom: 50px;
+   }
+}

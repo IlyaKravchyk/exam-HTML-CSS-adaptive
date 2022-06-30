@@ -23,7 +23,7 @@ html body {
 /*-----------------------------------------------*/
 .container {
    max-width: 1160px;
-   width: 80%;
+   width: 90%;
    margin: 0 auto;
 }
 
@@ -37,6 +37,41 @@ html body {
    justify-content: space-between;
    align-items: center;
    padding-top: 45px;
+}
+
+.header__navigation {
+   width: 66.66%;
+}
+
+.header__burger {
+   width: 30px;
+   height: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   display: none;
+}
+
+#header__ckeckbox {
+   display: none;
+}
+
+.header__burger span {
+   width: 100%;
+   height: 3px;
+   background-color: #000;
+   display: inline-block;
+   border-radius: 3px;
+}
+
+.header__burger::before,
+.header__burger::after {
+   content: '';
+   width: 100%;
+   height: 3px;
+   background-color: #000;
+   display: inline-block;
+   border-radius: 3px;
 }
 
 .header__menu {
@@ -55,6 +90,10 @@ html body {
    font-family: Roboto;
 }
 
+.header__basket {
+   margin-left: auto;
+}
+
 .header__basket::before {
    font-family: fontawesome;
    content: '\f07a';
@@ -65,7 +104,7 @@ html body {
 
 .header__promo {
    background: url('../img/slide1.png') no-repeat bottom 0 right 30px;
-   background-size: 698px;
+   background-size: 60%;
 }
 
 .header__promo-content {
@@ -238,7 +277,6 @@ html body {
    display: grid;
    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
    gap: 25px;
-   margin-top: auto;
 }
 
 .information__statistics-number {
@@ -254,9 +292,16 @@ html body {
 }
 
 .logo {
-   padding: 60px 0 50px 0;
-   border-bottom: 2px solid #eee;
+   padding: 60px 0 0 0;
    margin-bottom: 80px;
+}
+
+.logo::after {
+   content: '';
+   width: 100%;
+   height: 2px;
+   background-color: #eee;
+   display: inline-block;
 }
 
 .logo__content {
@@ -264,6 +309,7 @@ html body {
    justify-content: space-around;
    align-items: center;
    flex-wrap: wrap;
+   margin-bottom: 50px;
 }
 
 .logo__icon {
@@ -319,7 +365,7 @@ iframe {
    background-color: #fff;
    position: absolute;
    top: 50%;
-   left: 140px;
+   left: 10%;
    transform: translateY(-50%);
    z-index: 30;
 }
@@ -391,7 +437,8 @@ iframe {
 
 
 .footer__text {
-   flex: 0 1 66.66%
+   flex: 0 1 66.66%;
+   padding-left: 15px;
 }
 
 .footer__title {
