@@ -200,6 +200,12 @@
 }
 
 @media(max-width:375px) {
+   .container {
+      width: 80%;
+   }
+
+
+
    #header__ckeckbox:checked~.header__menu {
       padding-top: 30px;
    }
@@ -214,6 +220,44 @@
 
    .header__list {
       margin-bottom: 20px;
+   }
+
+   .cards__image img {
+      max-width: 260px;
+   }
+
+   .information__title {
+      font-size: 21px;
+   }
+
+   .information__description {
+      font-size: 14px;
+   }
+
+   .information__image img {
+      max-width: 280px;
+      margin: 0 auto 20px auto;
+      display: block;
+   }
+
+   .information__subtitle {
+      font-size: 14px;
+   }
+
+   .information__statistics-number {
+      font-size: 36px;
+      justify-self: center;
+   }
+
+   .information__statistics-text {
+      font-size: 13px;
+      justify-self: center;
+   }
+
+   .frame__items {
+      align-items: center;
+      padding-left: 0;
+      max-width: 280px;
    }
 
    .footer__title {
